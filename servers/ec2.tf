@@ -13,7 +13,7 @@ resource "aws_route53_record" "frontend" {
   name    = "frontend.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["aws_instance.frontend.private_ip"]
+  records = [aws_instance.frontend.private_ip]
   
 }
 
@@ -32,7 +32,7 @@ resource "aws_route53_record" "catalogue" {
   name    = "catalogue.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["aws_instance.catalogue.private_ip"]
+  records = [aws_instance.catalogue.private_ip]
   
 }
 
@@ -51,7 +51,7 @@ resource "aws_route53_record" "mongodb" {
   name    = "mongodb.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["aws_instance.mongodb.private_ip"]
+  records = [aws_instance.mongodb.private_ip]
   
 }
 
@@ -70,7 +70,7 @@ resource "aws_route53_record" "user" {
   name    = "user.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["aws_instance.user.private_ip"]
+  records = [aws_instance.user.private_ip]
   
 }
 
@@ -90,7 +90,7 @@ resource "aws_route53_record" "cart" {
   name    = "cart.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["aws_instance.cart.private_ip"]
+  records = [aws_instance.cart.private_ip]
   
 }
 
@@ -110,7 +110,7 @@ resource "aws_route53_record" "shipping" {
   name    = "shipping.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["aws_instance.shipping.private_ip"]
+  records = [aws_instance.shipping.private_ip]
   
 }
 
@@ -129,7 +129,7 @@ resource "aws_route53_record" "payment" {
   name    = "payment.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["aws_instance.payment.private_ip"]
+  records = [aws_instance.payment.private_ip]
   
 }
 
@@ -149,7 +149,7 @@ resource "aws_route53_record" "dispatch" {
   name    = "dispatch.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["aws_instance.dispatch.private_ip"]
+  records = [aws_instance.dispatch.private_ip]
   
 }
 
@@ -169,7 +169,7 @@ resource "aws_route53_record" "redis" {
   name    = "redis.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["aws_instance.redis.private_ip"]
+  records = [aws_instance.redis.private_ip]
   
 }
 
@@ -188,7 +188,7 @@ resource "aws_route53_record" "mysql" {
   name    = "mysql.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["aws_instance.mysql.private_ip"]
+  records = [aws_instance.mysql.private_ip]
   
 }
 
@@ -207,7 +207,7 @@ resource "aws_route53_record" "rabbitmq" {
   name    = "rabbitmq.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["aws_instance.rabbitmq.private_ip"]
+  records = [aws_instance.rabbitmq.private_ip]
 
 }
 
