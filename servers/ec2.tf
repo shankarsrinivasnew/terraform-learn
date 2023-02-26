@@ -9,7 +9,7 @@ resource "aws_instance" "frontend" {
 }
 
 resource "aws_route53_record" "frontend" {
-  zone_id = "aZ0607165JC9NKEPWSMH2"
+  zone_id = "Z0607165JC9NKEPWSMH2"
   name    = "frontend.sstech.store"
   type    = "A"
   ttl     = 30
@@ -28,7 +28,7 @@ resource "aws_instance" "catalogue" {
 }
 
 resource "aws_route53_record" "catalogue" {
-  zone_id = "aZ0607165JC9NKEPWSMH2"
+  zone_id = "Z0607165JC9NKEPWSMH2"
   name    = "catalogue.sstech.store"
   type    = "A"
   ttl     = 30
@@ -47,7 +47,7 @@ resource "aws_instance" "mongodb" {
 }
 
 resource "aws_route53_record" "mongodb" {
-  zone_id = "aZ0607165JC9NKEPWSMH2"
+  zone_id = "Z0607165JC9NKEPWSMH2"
   name    = "mongodb.sstech.store"
   type    = "A"
   ttl     = 30
@@ -66,7 +66,7 @@ resource "aws_instance" "user" {
 }
 
 resource "aws_route53_record" "user" {
-  zone_id = "aZ0607165JC9NKEPWSMH2"
+  zone_id = "Z0607165JC9NKEPWSMH2"
   name    = "user.sstech.store"
   type    = "A"
   ttl     = 30
@@ -86,7 +86,7 @@ resource "aws_instance" "cart" {
 }
 
 resource "aws_route53_record" "cart" {
-  zone_id = "aZ0607165JC9NKEPWSMH2"
+  zone_id = "Z0607165JC9NKEPWSMH2"
   name    = "cart.sstech.store"
   type    = "A"
   ttl     = 30
@@ -106,7 +106,7 @@ resource "aws_instance" "shipping" {
 }
 
 resource "aws_route53_record" "shipping" {
-  zone_id = "aZ0607165JC9NKEPWSMH2"
+  zone_id = "Z0607165JC9NKEPWSMH2"
   name    = "shipping.sstech.store"
   type    = "A"
   ttl     = 30
@@ -125,7 +125,7 @@ resource "aws_instance" "payment" {
 }
 
 resource "aws_route53_record" "payment" {
-  zone_id = "aZ0607165JC9NKEPWSMH2"
+  zone_id = "Z0607165JC9NKEPWSMH2"
   name    = "payment.sstech.store"
   type    = "A"
   ttl     = 30
@@ -145,7 +145,7 @@ resource "aws_instance" "dispatch" {
 }
 
 resource "aws_route53_record" "dispatch" {
-  zone_id = "aZ0607165JC9NKEPWSMH2"
+  zone_id = "Z0607165JC9NKEPWSMH2"
   name    = "dispatch.sstech.store"
   type    = "A"
   ttl     = 30
@@ -165,7 +165,7 @@ resource "aws_instance" "redis" {
 }
 
 resource "aws_route53_record" "redis" {
-  zone_id = "aZ0607165JC9NKEPWSMH2"
+  zone_id = "Z0607165JC9NKEPWSMH2"
   name    = "redis.sstech.store"
   type    = "A"
   ttl     = 30
@@ -184,7 +184,7 @@ resource "aws_instance" "mysql" {
 }
 
 resource "aws_route53_record" "mysql" {
-  zone_id = "aZ0607165JC9NKEPWSMH2"
+  zone_id = "Z0607165JC9NKEPWSMH2"
   name    = "mysql.sstech.store"
   type    = "A"
   ttl     = 30
@@ -203,7 +203,7 @@ resource "aws_instance" "rabbitmq" {
 }
 
 resource "aws_route53_record" "rabbitmq" {
-  zone_id = "aZ0607165JC9NKEPWSMH2"
+  zone_id = "Z0607165JC9NKEPWSMH2"
   name    = "rabbitmq.sstech.store"
   type    = "A"
   ttl     = 30
