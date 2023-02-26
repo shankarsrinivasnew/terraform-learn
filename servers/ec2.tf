@@ -212,7 +212,7 @@ resource "aws_route53_record" "rabbitmq" {
 }
 
 output "rabbitmypulicip" {
-  value = aws_instance.rabbitmq.private_ip
+  value = aws_instance.rabbitmq
 }
 
 
