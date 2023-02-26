@@ -1,1 +1,1 @@
-initial = "sakuanla"
+myinit = "sakuanla"
