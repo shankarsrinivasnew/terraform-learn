@@ -20,3 +20,11 @@ variable "cli" {
 output "mycli" {
   value = var.cli
 }
+
+variable "input" {
+  
+}
+
+output "input" {
+  value = var.input
+}
