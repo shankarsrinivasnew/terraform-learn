@@ -5,3 +5,11 @@ variable "myvar" {
 output "myoutput" {
   value = var.myvar
 }
+
+variable "myinit" {
+  default = "srinivas"
+}
+
+output "myiniout" {
+  value = var.myinit
+}
