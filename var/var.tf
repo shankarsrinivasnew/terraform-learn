@@ -13,3 +13,10 @@ variable "myinit" {
 output "myiniout" {
   value = var.myinit
 }
+
+variable "cli" {
+    default = "notcli"
+}
+output "mycli" {
+  value = var.cli
+}
