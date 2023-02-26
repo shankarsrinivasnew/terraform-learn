@@ -1,4 +1,4 @@
-/* variable "myvar" {
+ variable "myvar" {
   default = "shankar"
 }
 
@@ -12,7 +12,7 @@ variable "myinit" {
 
 output "myiniout" {
   value = var.myinit
-} */
+} 
 
 variable "cli" {
     default = "notcli"
