@@ -45,3 +45,9 @@ output "myoutput" {
   value = aws_instance.myec2["catalogue"].private_ip 
 }
 
+output "fulloutput" {
+
+  value = { for k, v in aws_vpc.example : k => v.id }
+  
+}
+  
