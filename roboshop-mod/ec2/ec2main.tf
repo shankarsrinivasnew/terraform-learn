@@ -6,10 +6,10 @@ data "aws_ami" "myami" {
 
 resource "aws_instance" "myec2" {
     ami = data.aws_ami.myami.image_id
-    instance_type = "${var.instance_type}"
+    instance_type = var.instance_type
     vpc_security_group_ids = [ "sg-094864f55a54f2a12" ]
     tags = {
-        Name = "${var.component}"
+        Name = var.component
     }
 
 }
