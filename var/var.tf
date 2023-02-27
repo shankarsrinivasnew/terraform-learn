@@ -57,5 +57,5 @@ variable "map" {
 }
 
 output "types" {
-    value = " normal value is ${var.normal} and list value is ${var.list[1]} and map value is ${var.map["b"]} "
+    value = " normal value is ${var.normal} and list value is ${var.list[1]} and map value is ${var.map} "
 }
