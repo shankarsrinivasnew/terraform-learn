@@ -9,17 +9,17 @@ module "ssmodule" {
 variable "myvar" {
     default = {
         catalogue = {
-            name = "catalogue",
+            name = "catalogues",
             type = "t2.micro"
         }
 
         cart = {
-            name = "cart",
+            name = "carts",
             type = "t2.micro"
         }
 
         user = {
-            name = "user",
+            name = "users",
             type = "t2.micro"
         }
 
