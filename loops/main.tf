@@ -1,23 +1,23 @@
-/* resource "aws_instance" "myec2" {
+resource "aws_instance" "myec2" {
+  for_each = var.mytags
   ami                    = "ami-0a017d8ceb274537d"
   instance_type          = "t3.micro"
-  count                  = length(var.servers)
   vpc_security_group_ids = ["sg-094864f55a54f2a12"]
   tags = {
-    Name = var.servers[count.index]
+    Name = each.value["Name"]
   }
 
+} 
+
+/* resource "null_resource" "null" {
+  count = length(var.servers)
 } */
 
-resource "null_resource" "null" {
-  count = length(var.servers)
-}
-
-variable "servers" {
+/* variable "servers" {
   default = ["frontend", "catalogue", "cart"]
-}
+} */
 
- /* variable "mytags" {
+  variable "mytags" {
   default = {
     catalogue = {
       Name        = "catalogue"
@@ -39,5 +39,5 @@ variable "servers" {
 
   }
 
-}  */
+} 
 
