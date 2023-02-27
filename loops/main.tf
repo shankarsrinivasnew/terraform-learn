@@ -47,7 +47,9 @@ output "myoutput" {
 
 output "fulloutput" {
 
-  value = [ for k, v in aws_instance.myec2 : "${k} - ${v.private_ip}" ]
+  value = { for k, v in aws_instance.myec2 : k => v.private_ip }
+  #value = [ for k, v in aws_instance.myec2 : "${k} - ${v.private_ip}" ]
+
   
 }
   
