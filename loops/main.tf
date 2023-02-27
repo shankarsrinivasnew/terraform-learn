@@ -47,7 +47,7 @@ output "myoutput" {
 
 output "fulloutput" {
 
-  value = { for k, v in aws_vpc.example : k => v.id }
+  value = { for k, v in aws_instance.myec2 : k => v.private_ip }
   
 }
   
