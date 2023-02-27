@@ -13,7 +13,7 @@ variable "servers" {
   default = ["frontend", "catalogue", "cart", "user"]
 }
 
-/* variable "mytags" {
+ variable "mytags" {
   default = {
     catalogue = {
       Name        = "catalogue"
@@ -35,5 +35,5 @@ variable "servers" {
 
   }
 
-} */
+} 
 
