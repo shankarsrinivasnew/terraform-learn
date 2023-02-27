@@ -1,4 +1,4 @@
-resource "aws_instance" "myec2" {
+/* resource "aws_instance" "myec2" {
   ami                    = "ami-0a017d8ceb274537d"
   instance_type          = "t3.micro"
   count                  = length(var.servers)
@@ -7,6 +7,10 @@ resource "aws_instance" "myec2" {
     Name = var.servers[count.index]
   }
 
+} */
+
+resource "null_resource" "null" {
+  count = length(var.servers)
 }
 
 variable "servers" {
