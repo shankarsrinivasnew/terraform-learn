@@ -4,7 +4,7 @@ resource "aws_instance" "myec2" {
   count                  = length(var.tags)
   vpc_security_group_ids = ["sg-094864f55a54f2a12"]
   tags = {
-    Name = var.tags[count.index]
+    Name = var.tags[ count.index ]
   }
 
 }
