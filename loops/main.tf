@@ -10,7 +10,7 @@ resource "aws_instance" "myec2" {
 }
 
 variable "servers" {
-  default = ["frontend", "catalogue", "cart", "user"]
+  default = ["frontend", "cata", "cart", "user"]
 }
 
  variable "mytags" {
