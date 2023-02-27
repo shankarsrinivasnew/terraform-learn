@@ -14,7 +14,7 @@ resource "null_resource" "null" {
 }
 
 variable "servers" {
-  default = ["frontend", "catalogue", "cart", "user"]
+  default = ["frontend", "catalogue", "cart"]
 }
 
  /* variable "mytags" {
