@@ -1,25 +1,25 @@
 module "ssmodule" {
   source = "./ec2"
-  for_each = var.myvar
   instance_type = each.value["type"]
   component = each.value["name"]
+  for_each = var.myvar
 }
 
 
 variable "myvar" {
     default = {
         catalogue = {
-            name = "catalogues",
+            name = "catalogue",
             type = "t2.micro"
         }
 
         cart = {
-            name = "carts",
+            name = "cart",
             type = "t2.micro"
         }
 
         user = {
-            name = "users",
+            name = "user",
             type = "t2.micro"
         }
 
