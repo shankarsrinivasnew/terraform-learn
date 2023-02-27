@@ -1,10 +1,10 @@
 resource "aws_instance" "myec2" {
   ami                    = "ami-0a017d8ceb274537d"
   instance_type          = "t3.micro"
-  count                  = length(var.mytags)
+  count                  = length(var.servers)
   vpc_security_group_ids = ["sg-094864f55a54f2a12"]
   tags = {
-    Name = var.mytags[count.index]
+    Name = var.servers[count.index]
   }
 
 }
@@ -13,7 +13,7 @@ variable "servers" {
   default = ["frontend", "cata", "cart", "user"]
 }
 
- variable "mytags" {
+ /* variable "mytags" {
   default = {
     catalogue = {
       Name        = "catalogue"
@@ -35,5 +35,5 @@ variable "servers" {
 
   }
 
-} 
+}  */
 
