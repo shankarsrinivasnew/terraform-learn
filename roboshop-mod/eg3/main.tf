@@ -10,6 +10,8 @@ module "myec2m" {
 module "mysgm" {
   source = "./sg"
   mysgtag = var.mysgtag
+  env = var.env
+
 }
 
 module "my53m"  {
