@@ -1,9 +1,9 @@
 module "myec2" {
   source    = "./ec2"
-  for_each = "${var.servers}"
+  for_each = var.servers
   component = each.value["name"]
   instance_type = each.value["type"]
-  sg_id = ["module.mysg.my_sg_id"]
+  sg_id = module.mysg.my_sg_id
 
 }
 
