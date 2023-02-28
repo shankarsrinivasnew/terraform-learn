@@ -4,11 +4,12 @@ module "myec2m" {
   component = each.value["name"]
   type = each.value["type"]
   sgid = module.mysgm.mysgo
-
+  env = var.env
 }
 
 module "mysgm" {
   source = "./sg"
+  mysgtag = var.mysgtag
 }
 
 module "my53m"  {
@@ -16,7 +17,6 @@ module "my53m"  {
     for_each = var.servers
     component = each.value["name"]
     ip = module.myec2m[each.value["name"]].myeceo_ip
-    env = var.env
 }
 
 
