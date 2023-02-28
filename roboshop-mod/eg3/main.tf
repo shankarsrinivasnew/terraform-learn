@@ -14,6 +14,7 @@ module "mysgm" {
 module "my53m"  {
     source = "./R53"
     for_each = var.servers
+    component = each.value["name"]
     ip = module.myec2m[each.value["name"]].myeceo_ip
 }
 
