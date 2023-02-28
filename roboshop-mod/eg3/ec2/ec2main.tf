@@ -5,10 +5,12 @@ data "aws_ami" "myamir" {
 
 }
 resource "aws_instance" "myec2r" {
-  name                   = "${var.component}-${var.env}"
   ami                    = data.aws_ami.myamir.image_id
   instance_type          = var.type
   vpc_security_group_ids = ["${var.sgid}"]
+  tags = {
+    Name = "${var.component}-${var.env}"
+  }
 }
 
 variable "component" {
