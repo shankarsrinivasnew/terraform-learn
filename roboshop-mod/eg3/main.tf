@@ -16,6 +16,7 @@ module "my53m"  {
     for_each = var.servers
     component = each.value["name"]
     ip = module.myec2m[each.value["name"]].myeceo_ip
+    env = var.env
 }
 
 
