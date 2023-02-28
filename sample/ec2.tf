@@ -5,7 +5,7 @@ data "aws_ami" "myami" {
 }
 
 resource "aws_instance" "myec2" {
-    ami =  "${data.aws_ami.myami.image_id}"
+    ami =  data.aws_ami.myami.image_id
     instance_type = "t3.micro"
     vpc_security_group_ids = [ "sg-094864f55a54f2a12" ]
     tags = {
