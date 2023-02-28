@@ -8,8 +8,7 @@ module "myec2" {
 }
 
 module "mysg" {
-  source = "./mysg"
-
+  source = "./sg"
 }
 
 variable "servers" {
