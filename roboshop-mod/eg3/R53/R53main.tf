@@ -3,7 +3,7 @@ resource "aws_route53_record" "myr53r" {
   name    = "${var.component}.sstech.store"
   type    = "A"
   ttl     = 30
-  records = ["${var.ip}.sstech.store"]
+  records = [var.ip]
 }
 
 variable "component" {
