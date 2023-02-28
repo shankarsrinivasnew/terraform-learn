@@ -12,7 +12,7 @@ resource "aws_instance" "myec2" {
         Name = "provisioner"
     }
 
-    provisioner "remote_exec" {
+    provisioner "remote-exec" {
         connection {
           host = self.public_ip
           user = "root"
