@@ -10,9 +10,8 @@ variable "component" {
   
 }
 
-variable "env" {
-  
-}
+/* variable "env" {
+} */
 
 variable "ip" {
   
