@@ -12,7 +12,7 @@ module "mysgm" {
 }
 
 module "my53m"  {
-    source = "./53"
+    source = "./R53"
     for_each = var.servers
     ip = module.myec2m[each.value["name"]].myeceo_ip
 }
